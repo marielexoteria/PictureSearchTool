@@ -1,0 +1,63 @@
+/* cambiando el color de fondo a blanco ya que con el Bootstrap de ahora el color por defecto es #2B3E50 y no se ve el spinner de carga */
+body {
+    background: #fff;
+}
+
+/* cambiando el color de #4E5D6C a un gris más claro */
+div.jumbotron {
+    background: #9c9c9c;
+}
+
+/* cambiando el color de #4E5D6C a un gris más claro */
+div.card {
+    border: none;
+    background: #9c9c9c;
+}
+
+/* cambiando el color del texto de #EBEBEB a algo más blanco para que contraste con el color de fondo de la tarjeta */
+div.card-text {
+    color: #f2f0f0;
+}
+
+/* código de http://tobiasahlin.com/spinkit/ para el spinner de carga */
+.spinner {
+    width: 40px;
+    height: 40px;
+  
+    position: relative;
+    margin: 100px auto;
+  }
+  
+  .double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #333;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
